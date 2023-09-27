@@ -9,7 +9,7 @@ function ShowVideo() {
   const [videoDetails, setVideoDetails] = useState(null);
   const [videoURL, setVideoURL] = useState(null);
   const fetchVideo = async () => {
-    const result = await axios.post(process.env.REACT_APP_API_KEY + "/getVideo", {
+    const result = await axios.post(process.env.REACT_APP_API_KEY + "getVideo", {
       id: videoId,
     });
     setVideoDetails(result.data.data);
