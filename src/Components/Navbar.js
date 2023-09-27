@@ -5,7 +5,7 @@ function Navbar() {
     <nav className="bg-gray-800 py-4">
       <div className="container mx-auto flex justify-center space-x-8">
         <Link
-          to="#"
+          to="/"
           className="text-white hover:text-indigo-500 transition duration-300 relative after:-translate-x-1 after:absolute after:w-full after:h-0.5 after:bg-indigo-500 after:bottom-0 after:left-0"
         >
           Home

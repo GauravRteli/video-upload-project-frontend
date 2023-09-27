@@ -5,12 +5,14 @@ import Videos from "./Components/Videos";
 import ShowVideo from "./Components/ShowVideo";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Home from "./Components/Home";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
+      <Route path="/" element={<Home />} />
         <Route path="/upload" element={<UploadPage />} />
         <Route path="/videos" element={<Videos />} />
         <Route path="/showvideo/:videoId" element={<ShowVideo />} />
